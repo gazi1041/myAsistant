@@ -1,0 +1,13 @@
+{
+  "name": "gazi-ozdemir-okul-takip",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Öğretmen platformu, Gemini destekli TEKNOFEST proje hazırlama ve PDF indirme",
+  "engines": { "node": ">=22.9.0" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check server.mjs && node --check lib/gemini.mjs && node --check public/workshop.js && node --check public/gemini-ui.js"
+  }
+}
